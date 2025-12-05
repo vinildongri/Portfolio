@@ -157,28 +157,27 @@ const Contact = () => {
       id="contact"
       className="py-20 px-6 md:px-16 bg-white dark:bg-gray-900 transition-colors"
     >
-      {/* Section title with reveal animation */}
+      {/* Section title */}
       <RevealOnScroll y={30}>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white text-center mb-12">
           Contact <span className="text-blue-500">Me!</span>
         </h2>
       </RevealOnScroll>
 
-      {/* Contact form with reveal animation */}
+      {/* Contact form */}
       <RevealOnScroll delay={0.2} y={30}>
-        {/* FormSubmit integration */}
         <form
-          action="https://formsubmit.co/dongrivinil@gmail.com" // <-- Replace with your email
+          action="https://formsubmit.co/dongrivinil@gamil.com" // <-- Replace with your email
           method="POST"
           className="max-w-3xl mx-auto bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg"
         >
-          {/* Hidden inputs required by FormSubmit */}
+          {/* FormSubmit required hidden inputs */}
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_subject" value="New Contact Form Message!" />
-          {/* Optional: redirect to a thank-you page after submission */}
-          {/* <input type="hidden" name="_next" value="https://your-portfolio-url.com/thank-you" /> */}
+          {/* Optional: redirect after submission */}
+          <input type="hidden" name="_next" value="https://portfolio-bay-phi-hojhzpleqf.vercel.app/thank-you" />
 
-          {/* Name and Email fields */}
+          {/* Name and Email */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
             <input
               type="text"
@@ -196,7 +195,7 @@ const Contact = () => {
             />
           </div>
 
-          {/* Mobile and Subject fields */}
+          {/* Mobile and Subject */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
             <input
               type="number"
@@ -214,16 +213,14 @@ const Contact = () => {
             />
           </div>
 
-          {/* Message textarea */}
-          <div className="mb-6">
-            <textarea
-              name="message"
-              rows="6"
-              placeholder="Your Message"
-              required
-              className="w-full p-3 border rounded-lg bg-gray-100 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-            ></textarea>
-          </div>
+          {/* Message */}
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Your Message"
+            required
+            className="w-full p-3 border rounded-lg bg-gray-100 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 mb-6"
+          ></textarea>
 
           {/* Submit button */}
           <div className="flex justify-center">
@@ -234,8 +231,6 @@ const Contact = () => {
               Send Message
             </button>
           </div>
-
-          {/* Optional: Inline success message removed because FormSubmit handles it */}
         </form>
       </RevealOnScroll>
     </section>
