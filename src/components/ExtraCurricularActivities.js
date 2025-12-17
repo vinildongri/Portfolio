@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaTrophy, FaMusic } from "react-icons/fa"; // Using FaTrophy for sports
+import { FaTrophy, FaMusic } from "react-icons/fa";
 
 const activities = [
   {
@@ -9,7 +9,8 @@ const activities = [
   },
   {
     category: "Musical Instruments",
-    items: ["Flute", "Piano"],
+    items: ["Piano", "Guitar"],
+    videoUrl: "/GuitarVideo.mp4",
     icon: <FaMusic className="text-blue-500 text-2xl" />
   }
 ];
@@ -27,6 +28,8 @@ export default function ExtraCurricularActivities() {
   return (
     <section id="activities" className="py-16 bg-white dark:bg-gray-900">
       <div className="max-w-6xl mx-auto px-6">
+
+        {/* Title */}
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,6 +40,7 @@ export default function ExtraCurricularActivities() {
           Extra Curricular Activities
         </motion.h2>
 
+        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {activities.map((activity, i) => (
             <motion.div
@@ -46,25 +50,43 @@ export default function ExtraCurricularActivities() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={cardVariants}
-              className="group bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow hover:shadow-lg transition-all duration-300"
+              className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow hover:shadow-lg transition"
             >
-              <div className="flex items-center gap-3 mb-3">
+              {/* Header */}
+              <div className="flex items-center gap-3 mb-4">
                 {activity.icon}
                 <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
                   {activity.category}
                 </h3>
               </div>
 
+              {/* Items (2 columns) */}
               <div className="grid grid-cols-2 gap-6">
                 {activity.items.map((item, idx) => (
                   <div
                     key={idx}
-                    className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-4 rounded-lg shadow hover:shadow-xl transition-all duration-300 group-hover:bg-gray-200 dark:group-hover:bg-gray-600"
+                    className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-4 rounded-lg shadow hover:shadow-md transition flex items-center justify-center"
                   >
-                    <p className="text-gray-800 dark:text-white text-center font-medium">{item}</p>
+                    <p className="text-gray-800 dark:text-white font-medium">
+                      {item}
+                    </p>
                   </div>
                 ))}
               </div>
+
+              {/* Video Button (BOTTOM & SEPARATE) */}
+              {activity.videoUrl && (
+                <div className="mt-6 flex justify-center">
+                  <a
+                    href={activity.videoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-12 py-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold shadow-md hover:scale-105 transition"
+                  >
+                    🎥  Watch Demo
+                  </a>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>

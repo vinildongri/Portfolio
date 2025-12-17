@@ -3,42 +3,31 @@ import { details, title } from "framer-motion/client";
 import { FaAward } from "react-icons/fa";
 
 const achievements = [
-  {
-    title: "LeetCode",
-    detail: "Rating: 2046",
-    highlight: "Best Global Rank: 221",
-    link: "https://leetcode.com/u/DongriVinil/"
-  },
-  {
-    title: "GeeksforGeeks",
-    detail: "Rating: 506",
-    highlight: "Institute Rank: 2",
-    link: "https://www.geeksforgeeks.org/profile/dongrivinil?from=explore&tab=activity"
-  },
-  {
+   {
     title: "Mind Marathon",
     detail: "Secured First Place",
     highlight: "Led the team to victory",
     link: "/images/mindMarathon.png"
   },
   // {
-  //   title: "CodeChef",
-  //   detail: "Rating: 1939",
-  //   highlight: "Best Global Rank: 382",
-  //   link: "https://www.codechef.com"
+  //   title: "LeetCode",
+  //   detail: "Rating: 2046",
+  //   highlight: "Best Global Rank: 221",
+  //   link: "https://leetcode.com/u/DongriVinil/"
   // },
-  // {
-  //   title: "Codeforces",
-  //   detail: "Rating: 1400+",
-  //   highlight: "Stable Performer",
-  //   link: "https://codeforces.com"
-  // },
-  // {
-  //   title: "HackerRank",
-  //   detail: "6-Star Coder",
-  //   highlight: "Gold Badge in Problem Solving",
-  //   link: "https://www.hackerrank.com"
-  // }
+  {
+    title: "GeeksforGeeks",
+    detail: "Rating: 506",
+    highlight: "Institute Rank: 2",
+    link: "https://www.geeksforgeeks.org/profile/dongrivinil?from=explore&tab=activity"
+  },
+   {
+    title: "SkillsBuild-Customer Engagement",
+    detail: "",
+    // detail: "Communication and Personality Dynamics",
+    highlight: "Issued by: IBM SkillsBuild, Issued on: Mar 27, 2025",
+    link: "/IBMDesign.pdf"
+  },
 ];
 
 const cardVariants = {
