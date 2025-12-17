@@ -16,7 +16,7 @@ const About = () => {
           viewport={{ amount: 0.5, once: false }}
         >
           <img
-            src="/pavan-pic.jpg"
+            src="/vinil.png"
             alt="Dongri Vinil"
             className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-xl shadow-xl border-4 border-blue-300"
           />

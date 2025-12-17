@@ -94,7 +94,7 @@ const Home = () => {
         viewport={{ once: true }}
       >
         <img
-          src="/pavan-pic.jpg"
+          src="/vinil.png"
           alt="Dongri Vinil"
           className="w-60 h-60 sm:w-72 sm:h-72 object-cover rounded-full border-4 border-blue-300 shadow-lg animate-float"
         />

@@ -22,7 +22,7 @@ const portfolioItems = [
     title: "Tic Tac Toe ",
     description: "Online Tic Tac Toe. Play with computer",
     imageUrl: "/images/tic-tac-toe-cover.jpeg",
-    link: "https://tic-tac-toes-taupe.vercel.app/"
+    link: "https://tic-tac-toe-three-ashen-57.vercel.app/"
   },
 
   // {
