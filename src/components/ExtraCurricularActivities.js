@@ -10,7 +10,7 @@ const activities = [
   {
     category: "Musical Instruments",
     items: ["Piano", "Guitar"],
-    videoUrl: "/GuitarVideo.mp4",
+    // videoUrl: "/GuitarVideo.mp4",
     icon: <FaMusic className="text-blue-500 text-2xl" />
   }
 ];
@@ -75,18 +75,18 @@ export default function ExtraCurricularActivities() {
               </div>
 
               {/* Video Button (BOTTOM & SEPARATE) */}
-              {activity.videoUrl && (
-                <div className="mt-6 flex justify-center">
-                  <a
+              {/* {activity.videoUrl && ( */}
+                {/* <div className="mt-6 flex justify-center"> */}
+                  {/* <a
                     href={activity.videoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-12 py-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold shadow-md hover:scale-105 transition"
                   >
                     🎥  Watch Demo
-                  </a>
-                </div>
-              )}
+                  </a> */}
+                {/* </div> */}
+              {/* )} */}
             </motion.div>
           ))}
         </div>
