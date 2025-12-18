@@ -16,6 +16,8 @@ const Header = () => {
     "Responsibility",
     "Achievements",
     "Activities",
+    // "Contact",
+    "Freelancing",
     "Contact"
   ];
 

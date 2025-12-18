@@ -11,6 +11,7 @@ import Experience from "./components/Experience";
 import Achievements from "./components/Achievements";
 import POS from "./components/POS";
 import ExtraCurricularActivities from "./components/ExtraCurricularActivities";
+import Freelancing from "./components/Freelancing";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
       <Achievements />
       <ExtraCurricularActivities />
       {/* <Services /> */}
+      {/* <Contact /> */}
+      <Freelancing />
       <Contact />
       <Footer />
     </div>
